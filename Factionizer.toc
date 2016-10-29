@@ -1,6 +1,6 @@
-## Interface: 70000
+## Interface: 70100
 ## Title: Factionizer
-## Version: 7.0.0-alpha-6-g4f844d0
+## Version: 7.0.0-alpha
 ## Author: gOOvER (Scheol), Malorne-EU
 ## URL: http://wow.curseforge.com/addons/factionizer/
 ## Description: Tells you what you can do to improve your faction
@@ -8,10 +8,6 @@
 ## SavedVariables: FIZ_Data
 ## SavedVariablesPerCharacter: FIZ_Suppressed
 ## OptionalDeps: Ace3, LibQTip-1.0, LibStub, CallbackHandler-1.0
-## X-Curse-Packaged-Version: 7.0.0-alpha-6-g4f844d0
-## X-Curse-Project-Name: Factionizer
-## X-Curse-Project-ID: factionizer
-## X-Curse-Repository-ID: wow/factionizer/mainline
 
 embeds.xml
 content.lua

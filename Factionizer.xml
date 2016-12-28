@@ -339,7 +339,7 @@
 							PlaySound("igMainMenuOptionCheckBoxOff");
 							SetWatchedFactionIndex(0);
 						end
-						ReputationWatchBar_Update();
+						ReputationFrame_Update();
 					</OnClick>
 					<OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_RIGHT");

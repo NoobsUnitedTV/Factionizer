@@ -3395,9 +3395,9 @@ function FIZ_ReputationDetailFrame_IsShown(faction,flag,flag2,i)
 	ReputationDetailFactionName:SetText(name);
 	ReputationDetailFactionDescription:SetText(description);
 	if ( atWarWith ) then
-		ReputationDetailAtWarCheckBox:SetChecked(1);
+		ReputationDetailAtWarCheckBox:SetChecked(true);
 	else
-		ReputationDetailAtWarCheckBox:SetChecked(nil);
+		ReputationDetailAtWarCheckBox:SetChecked(false);
 	end
 -- v rfl _16_ 1
 	if flag then
@@ -3425,14 +3425,14 @@ function FIZ_ReputationDetailFrame_IsShown(faction,flag,flag2,i)
 -- ^ rfl _16_ 3
 -- v rfl _16_ 2
 	if ( IsFactionInactive(faction) ) then
-		ReputationDetailInactiveCheckBox:SetChecked(1);
+		ReputationDetailInactiveCheckBox:SetChecked(true);
 	else
-		ReputationDetailInactiveCheckBox:SetChecked(nil);
+		ReputationDetailInactiveCheckBox:SetChecked(false);
 	end
 	if ( isWatched ) then
-		ReputationDetailMainScreenCheckBox:SetChecked(1);
+		ReputationDetailMainScreenCheckBox:SetChecked(true);
 	else
-		ReputationDetailMainScreenCheckBox:SetChecked(nil);
+		ReputationDetailMainScreenCheckBox:SetChecked(false);
 	end
 -- ^ rfl _16_ 2
 end
@@ -3487,9 +3487,9 @@ function FIZ_Rep_Detail_Frame(faction,colorID,barValue,barMax,origBarValue,stand
 	end
 
 	if ( atWarWith ) then
-		FIZ_ReputationDetailAtWarCheckBox:SetChecked(1);
+		FIZ_ReputationDetailAtWarCheckBox:SetChecked(true);
 	else
-		FIZ_ReputationDetailAtWarCheckBox:SetChecked(nil);
+		FIZ_ReputationDetailAtWarCheckBox:SetChecked(false);
 	end
 	if ( canToggleAtWar ) then
 		FIZ_ReputationDetailAtWarCheckBox:Enable();
@@ -3500,14 +3500,14 @@ function FIZ_Rep_Detail_Frame(faction,colorID,barValue,barMax,origBarValue,stand
 	end
 
 	if ( IsFactionInactive(faction) ) then
-		FIZ_ReputationDetailInactiveCheckBox:SetChecked(1);
+		FIZ_ReputationDetailInactiveCheckBox:SetChecked(true);
 	else
-		FIZ_ReputationDetailInactiveCheckBox:SetChecked(nil);
+		FIZ_ReputationDetailInactiveCheckBox:SetChecked(false);
 	end
 	if ( isWatched ) then
-		FIZ_ReputationDetailMainScreenCheckBox:SetChecked(1);
+		FIZ_ReputationDetailMainScreenCheckBox:SetChecked(true);
 	else
-		FIZ_ReputationDetailMainScreenCheckBox:SetChecked(nil);
+		FIZ_ReputationDetailMainScreenCheckBox:SetChecked(false);
 	end
 end
 -- ^ rfl R_D_F
